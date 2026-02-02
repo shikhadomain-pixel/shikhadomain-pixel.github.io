@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bharat Nourish</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f7f3ee;
+      color: #4a2f1b;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: #fffaf4;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 20px;
+      background: linear-gradient(to right, #e8d3b0, #f7efe3);
+    }
+
+    header h1 {
+      font-size: 40px;
+      margin: 0;
+      color: #8b4a1d;
+    }
+
+    header p {
+      margin: 6px 0;
+    }
+
+    .hero-img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 0 0 20px 20px;
+    }
+
+    section {
+      padding: 30px 20px;
+    }
+
+    h2 {
+      color: #8b4a1d;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #f4e6d3;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 12px;
+    }
+
+    .icon {
+      font-size: 32px;
+      color: #6d3a14;
+      margin-bottom: 10px;
+    }
+
+    .delivery {
+      background: #efe1cc;
+      margin: 20px;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      font-size: 20px;
+      animation: pulse 2s infinite;
+    }
+
+    footer {
+      background: #e8d3b0;
+      padding: 25px 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .social i {
+      margin: 0 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .social i:hover {
+      color: #8b4a1d;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.03); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <h1>भारत NOURISH</h1>
+    <p><strong>Premium Quality | Stone Ground | Freshly Milled</strong></p>
+    <p>Food Solutions That You Can Trust</p>
+  </header>
+
+  <!-- Hero Image -->
+  <img class="hero-img" src="https://images.unsplash.com/photo-1606788075765-42f4b7c4a4b8" alt="Healthy grains">
+
+  <section>
+    <h2>Millets</h2>
+    <div class="grid">
+      <div class="card">
+        <i class="fas fa-leaf icon"></i>
+        <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5" alt="Millets">
+        <h3>Easy Digestion</h3>
+        <p>Light, nutritious & gut-friendly grains.</p>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-seedling icon"></i>
+        <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d" alt="Natural farming">
+        <h3>Naturally Grown</h3>
+        <p>Cultivated with care and purity.</p>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-heart-pulse icon"></i>
+        <img src="https://images.unsplash.com/photo-1608198093002-de5f7c86c5e8" alt="Fiber rich">
+        <h3>Fiber Rich</h3>
+        <p>Supports heart & digestive health.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Whole Wheat Flour</h2>
+    <div class="grid">
+      <div class="card">
+        <i class="fas fa-mortar-pestle icon"></i>
+        <img src="https://images.unsplash.com/photo-1582515073490-39981397c445" alt="Stone ground flour">
+        <h3>Stone Ground</h3>
+        <p>Traditional chakki grinding.</p>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-bread-slice icon"></i>
+        <img src="https://images.unsplash.com/photo-1546549039-9a37c88b1a3f" alt="Fresh flour">
+        <h3>Freshly Milled</h3>
+        <p>Ground daily for best taste.</p>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-wheat-awn icon"></i>
+        <img src="https://images.unsplash.com/photo-1627485937980-221c88ac04f4" alt="Mineral rich wheat">
+        <h3>Mineral Rich</h3>
+        <p>Retains natural nutrients.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="delivery">
+    🚚 FREE DELIVERY <br>
+    <small>Up to 3 KM</small>
+  </div>
+
+  <footer>
+    <p>📞 +91 XXXXXXXXXX | 📧 info@bharatnourish.com</p>
+    <div class="social">
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-youtube"></i>
+    </div>
+    <p>Made in India 🇮🇳 | Made with Love</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
