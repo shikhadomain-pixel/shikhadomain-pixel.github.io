@@ -369,7 +369,38 @@
   display: block;
 }
 
-    
+ .trust-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin: 25px 0 40px 0;
+  text-align: center;
+}
+
+.trust-badges .badge {
+  display: flex;
+  align-items: center;
+  background: #f4e6d3;
+  padding: 12px 18px;
+  border-radius: 25px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  font-size: 14px;
+  color: #6d3a14;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trust-badges .badge i {
+  margin-right: 8px;
+  font-size: 18px;
+  color: #8b4a1d;
+}
+
+.trust-badges .badge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+   
   </style>
 </head>
 <body>
@@ -385,7 +416,24 @@
    class="order-btn">
    Order Freshly Milled Flour
 </a>
-
+<section class="trust-badges">
+  <div class="badge">
+    <i class="fas fa-check-circle"></i>
+    <span>FSSAI Certified</span>
+  </div>
+  <div class="badge">
+    <i class="fas fa-seedling"></i>
+    <span>Stone Ground Daily</span>
+  </div>
+  <div class="badge">
+    <i class="fas fa-shield-alt"></i>
+    <span>Hygienic Packing</span>
+  </div>
+  <div class="badge">
+    <i class="fas fa-leaf"></i>
+    <span>100% Preservative Free</span>
+  </div>
+</section>
   </header>
 
   <section style="text-align:center; padding:5px; background:#fffaf4;">
@@ -396,6 +444,7 @@
     ✔ 5-Star Rated on Google
   </p>
 </section>
+
 
 
   <!-- Hero Image -->
