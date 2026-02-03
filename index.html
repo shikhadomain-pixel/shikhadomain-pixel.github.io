@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Bharat Nourish</title>
-  <subtitle>Nutrition That Fits You</subtitle>
+  <meta name="description" content="Premium quality stone ground flour and millets in Noida. Freshly milled, preservative free, and delivered locally.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Font Awesome Icons -->
@@ -127,6 +127,33 @@
       50% { transform: scale(1.03); }
       100% { transform: scale(1); }
     }
+
+    /* FAQ Section */
+.faq-item {
+  background: #f4e6d3;
+  margin-bottom: 15px;
+  padding: 18px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.faq-item:hover {
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+.faq-item summary {
+  font-weight: bold;
+  font-size: 16px;
+  color: #6d3a14;
+}
+
+.faq-item p {
+  margin-top: 10px;
+  color: #4a2f1b;
+  line-height: 1.6;
+}
+    
   </style>
 </head>
 <body>
@@ -194,6 +221,37 @@
     </div>
   </section>
 
+<section>
+  <h2>Frequently Asked Questions</h2>
+
+  <details class="faq-item">
+    <summary>Is Bharat Nourish flour preservative free?</summary>
+    <p>Yes. Our flour is 100% preservative free and freshly milled to maintain purity and nutrition.</p>
+  </details>
+
+  <details class="faq-item">
+    <summary>What makes your flour different from regular market flour?</summary>
+    <p>We use traditional stone grinding (chakki method) which retains fiber, minerals, and natural taste unlike high-speed commercial roller mills.</p>
+  </details>
+
+  <details class="faq-item">
+    <summary>Is it suitable for children and elderly?</summary>
+    <p>Yes. Our flour is light, easy to digest, and free from additives, making it suitable for all age groups.</p>
+  </details>
+
+  <details class="faq-item">
+    <summary>How should I store the flour?</summary>
+    <p>Store in an airtight container in a cool and dry place. For longer freshness, refrigeration is recommended.</p>
+  </details>
+
+  <details class="faq-item">
+    <summary>Do you deliver outside Sector-122 Noida?</summary>
+    <p>Currently we offer FREE delivery within 3 KM of Sector-122, Noida. For other locations, please contact us directly.</p>
+  </details>
+
+</section>
+
+  
   <div class="delivery">
     Address: Bharat Nourish, Sector-122, Noida <br>
     🚚 FREE DELIVERY <br>
@@ -220,6 +278,27 @@
   </footer>
 
 </div>
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Is Bharat Nourish flour preservative free?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Our flour is 100% preservative free and freshly milled to maintain purity and nutrition."
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "What makes your flour different from regular market flour?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We use traditional stone grinding method which retains fiber, minerals and natural taste."
+    }
+  }]
+}
+</script>
 </body>
 </html>
