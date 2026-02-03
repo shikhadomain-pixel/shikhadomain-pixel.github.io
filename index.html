@@ -176,8 +176,7 @@
   transform: scale(1.1);
   transition: 0.3s ease;
 }
-
-    .testimonial {
+ .testimonial {
   background: #f4e6d3;
   padding: 20px;
   border-radius: 15px;
@@ -189,6 +188,44 @@
   color: #f5b301;
   margin-bottom: 8px;
 }
+
+/* Testimonials Slider */
+.testimonial-slider {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #f4e6d3;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  text-align: center;
+  overflow: hidden;
+}
+
+.testimonial-slide {
+  display: none;
+  animation: fadeTestimonial 0.8s ease-in-out;
+}
+
+.testimonial-slide.active {
+  display: block;
+}
+
+.stars {
+  color: #f5b301;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+@keyframes fadeTestimonial {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+
+
+    
  /* order Button */
 .order-btn {
   display: inline-block;
@@ -395,7 +432,7 @@
       </div>
     </div>
   </section>
--->
+
 <section>
   <h2>What Our Customers Say</h2>
 
@@ -416,7 +453,37 @@
     <p>"Stone ground taste reminds me of traditional village chakki."</p>
     <strong>- Noida Resident</strong>
   </div>
+-->
 
+<section>
+  <h2>What Our Customers Say</h2>
+
+  <div class="testimonial-slider">
+
+    <div class="testimonial-slide active">
+      <div class="stars">★★★★★</div>
+      <p>"The quality is excellent and rotis are much softer compared to market flour. Highly recommended!"</p>
+      <strong>- Customer, Sector 122</strong>
+    </div>
+
+    <div class="testimonial-slide">
+      <div class="stars">★★★★★</div>
+      <p>"Very fresh and clean. I feel confident giving this to my children."</p>
+      <strong>- Happy Mother, Noida</strong>
+    </div>
+
+    <div class="testimonial-slide">
+      <div class="stars">★★★★★</div>
+      <p>"Stone ground taste reminds me of traditional village chakki."</p>
+      <strong>- Local Resident</strong>
+    </div>
+
+  </div>
+</section>
+
+
+
+  
 </section>
 <p style="text-align:center; margin-top:20px;">
   <a href="https://g.page/r/CZBMp7gR_U1zEBM/review" 
@@ -491,6 +558,7 @@
   </footer>
 
 </div>
+  
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -512,6 +580,22 @@
     }
   }]
 }
+
+<script>
+let slides = document.querySelectorAll(".testimonial-slide");
+let index = 0;
+
+function showNextSlide() {
+  slides[index].classList.remove("active");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active");
+}
+
+setInterval(showNextSlide, 4000); // changes every 4 seconds
+</script>
+
+
+  
 </script>
   <a href="https://wa.me/918810551214?text=Hello%20Bharat%20Nourish,%20I%20want%20to%20place%20an%20order."
    class="whatsapp-float"
