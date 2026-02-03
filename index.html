@@ -580,20 +580,20 @@
     }
   }]
 }
-
-<script>
-let slides = document.querySelectorAll(".testimonial-slide");
-let index = 0;
-
-function showNextSlide() {
-  slides[index].classList.remove("active");
-  index = (index + 1) % slides.length;
-  slides[index].classList.add("active");
-}
-
-setInterval(showNextSlide, 4000); // changes every 4 seconds
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  let slides = document.querySelectorAll(".testimonial-slide");
+  let index = 0;
+
+  setInterval(function() {
+    slides[index].classList.remove("active");
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("active");
+  }, 4000);
+});
+</script>
 
   
 </script>
