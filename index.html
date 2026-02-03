@@ -209,6 +209,76 @@
   transform: translateY(-3px);
 }
 
+<style>
+
+.products-section {
+  padding: 70px 10%;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.products-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #3e2c1c;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #5a3e2b;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.product-btn {
+  display: inline-block;
+  padding: 10px 22px;
+  background-color: #8b4a1d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.product-btn:hover {
+  background-color: #6d3a14;
+}
+
+</style>
+
+
     
   </style>
 </head>
@@ -231,6 +301,51 @@
   <!-- Hero Image -->
 <!--  <img class="hero-img" src="https://images.unsplash.com/photo-1606788075765-42f4b7c4a4b8" alt="Healthy grains">  -->
 
+  <section class="products-section">
+  <h2>Our Signature Products</h2>
+
+  <div class="product-grid">
+
+    <!-- Product 1 -->
+    <div class="product-card">
+      <img src="images/makka.jpg" alt="Makka Atta">
+      <h3>Makka Atta (Stone Ground)</h3>
+      <p>Rich in fiber. Traditionally stone-ground. No preservatives.</p>
+      <a href="https://wa.me/918810551214?text=I%20want%20to%20order%20Makka%20Atta"
+         class="product-btn" target="_blank">Order Now</a>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+      <img src="images/wheat.jpg" alt="Whole Wheat Atta">
+      <h3>Whole Wheat Atta</h3>
+      <p>High nutrition. Freshly milled. Soft & fluffy rotis.</p>
+      <a href="https://wa.me/918810551214?text=I%20want%20to%20order%20Whole%20Wheat%20Atta"
+         class="product-btn" target="_blank">Order Now</a>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <img src="images/multigrain.jpg" alt="Multigrain Atta">
+      <h3>Multigrain Atta</h3>
+      <p>Blend of traditional grains. Balanced nutrition for families.</p>
+      <a href="https://wa.me/918810551214?text=I%20want%20to%20order%20Multigrain%20Atta"
+         class="product-btn" target="_blank">Order Now</a>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-card">
+      <img src="images/bajra.jpg" alt="Bajra Atta">
+      <h3>Bajra Atta</h3>
+      <p>High fiber millet flour. Ideal for winter nutrition.</p>
+      <a href="https://wa.me/918810551214?text=I%20want%20to%20order%20Bajra%20Atta"
+         class="product-btn" target="_blank">Order Now</a>
+    </div>
+
+  </div>
+</section>
+
+  
   <section>
     <h2>Millets</h2>
     <div class="grid">
